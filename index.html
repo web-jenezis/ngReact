@@ -21,6 +21,8 @@
     <script src="app/components/jquery/dist/jquery.js"></script>
     <script src="app/components/bootstrap/dist/js/bootstrap.js"></script>
 
+    <script src="app/react-views/user-list.js"></script>
+
     <script src="app/main.js"></script>
 
 </head>
@@ -38,6 +40,11 @@
                     {{ user.firstName }} - {{ user.lastName }}
                 </li>
             </ul>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">AngularJS with ReactJS</div>
+            <div user-list users="users" user-selected="main.getUser(user)"></div>
         </div>
     </div>
 </body>
