@@ -16,14 +16,7 @@
         }
     </style>
 
-    <script src="app/components/angular/angular.js"></script>
-    <script src="app/components/react/react.js"></script>
-    <script src="app/components/jquery/dist/jquery.js"></script>
-    <script src="app/components/bootstrap/dist/js/bootstrap.js"></script>
-
-    <script src="app/react-views/user-list.js"></script>
-
-    <script src="app/main.js"></script>
+    
 
 </head>
 <body ng-app="app">
@@ -47,5 +40,6 @@
             <div user-list users="users" user-selected="main.getUser(user)"></div>
         </div>
     </div>
+    <script src="app/components/requirejs/require.js" data-main="app/main.js"></script>
 </body>
 </html>
